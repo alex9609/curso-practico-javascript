@@ -4,12 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
 </head>
 <body>
-    <h1>Figuras geométricas</h1>
-
-    <script src="./figuras.js">
-    </script>
+    <main class="fondo">
+        <h1 class="titulo">Calculadora de figuras</h1>
+        <div class="container d-flex flex-row justify-content-center">
+            <div class=" figura me-3">
+                    <h6 class="title">Cuadrado</h6>
+                    <p class="texto">Escriba cuanto mida uno de los lados del cuadrado: </p>
+                    <input class="mb-2"type="number" placeholder="Lados" id="ladoCuadrado">
+                    <p><span id="respuestaCuadrado"></span></p>
+                    <button type="button"  class="btn btn-primary" onclick="perimetroCuadrado()">Calcular perimetro</button>
+                    <button type="button"  class="btn btn-primary" onclick="areaCuadrado()">Calcular area</button>
+            </div>
+            <div class=" figura me-3">
+                <form action="">
+                    <h6 class="title">Triangulo</h6>
+                    <p class="texto">Escriba cuanto mide cada lado del triangulo: </p>
+                    <input class="mb-2" type="number" placeholder="Lado derecho"  id="ladoDerecho">
+                    <input class="mb-2" type="number" placeholder="Lado izquierdo" id="ladoIzquierdo">
+                    <input class="mb-2" type="number" placeholder="Base" id="base">
+                    <input class="mb-2" type="number" placeholder="Altura" id="altura">
+                    <p><span id="respuestaTriangulo"></span></p>
+                    <button type="button"  class="btn btn-primary" onclick="perimetroTriangulo()">Calcular perimetro</button>
+                    <button type="button"  class="btn btn-primary" onclick="areaTriangulo()">Calcular area</button>
+                </form>
+            </div>
+        </div>
+        <div class="container d-flex flex-row justify-content-center">
+            <div class=" figura me-3 mb-3 circulo">
+                <form action="">
+                    <h6 class="title">Circulo</h6>
+                    <p class="texto">Escriba cuanto mide el radio del circulo: </p>
+                    <input type="number" class="mb-2" id="radio">
+                    <p><span id="respuestaCirculo"></span></p>
+                    <button type="button"  class="btn btn-primary" onclick="diametroCirculo()">Calcular diametro</button>
+                    <button type="button"  class="btn btn-primary" onclick="perimetroCirculo()">Calcular perimetro</button>
+                    <button type="button"  class="btn btn-primary" onclick="areaCirculo()">Calcular area</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./figurasFunciones.js"></script>
 </body>
 </html>

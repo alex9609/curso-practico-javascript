@@ -1,0 +1,39 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("./img/fondo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.titulo{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.figura{
+    background-color: #fff;
+    margin-top: 10%;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 350px;
+}
+
+.title{
+    text-align: center;
+}
+
+.texto{
+    font-size: 0.9rem;
+}
+
+.circulo{
+    width: 500px;
+}
+
