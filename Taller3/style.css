@@ -1,0 +1,21 @@
+
+.container {
+    color: #fd5c63;
+    margin: 5%;
+    background-color: white;
+    padding-bottom: 7%;
+    border-radius: 10px;
+
+}
+
+.formulario{
+    color: white;
+    background-color: #fd5c63;
+    border-radius: 10px;
+}
+
+#respuesta{
+    color: white;
+    font-family:  'Times New Roman', Times, serif;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Descuentos</title>
+</head>
+<body class="object"> 
+    <div class="container d-flex flex-column  align-items-center justify-content-center">
+        <h2 class="title mb-3 mt-3">Taller 3</h2>
+        <h5>Este es el segundo taller sobre precios y descuentos</h5>
+
+        <div class="formulario d-flex flex-column col-6 align-items-center">
+            <h3 class="titulo mb-4 mt-4">Ingrese el precio del producto</h3>
+            <input class="mb-3" type="text" placeholder="precio" id="precio" class="col-4">
+            <p>Ingrese el porcentaje de descuento</p>
+            <input class="mb-3" type="text" placeholder="descuento" id="descuento"class="col-4" name="" id="">
+            <button class="btn btn-success col-4 mt-3" onclick="precioDescuento()">Calcular precio</button>
+            <h4 class="mt-4" id="respuesta"> </h4>
+        </div>
+
+    </div>
+
+    
+    <script src="./descuentos.js"></script>
+</body>
+</html>
